@@ -5,11 +5,15 @@
   memory: 2048
   private_ip: 10.0.10.10
   package_manager: yum
-  packages:
-  - wget
-  - unzip
-  - git
   scripts:
   - hello_java
+- name: remote
+  box: centos/7
+  cpus: 1
+  memory: 2048
+  private_ip: 10.0.10.11
+  package_manager: yum
+  scripts:
+  -  
 ...
   
