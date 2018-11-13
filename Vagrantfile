@@ -8,7 +8,7 @@ guests = YAML.load_file("guest_machines.yaml")
 Vagrant.configure("2") do |config|
 	# for each virtual machine
 	guests.each do |guest_vm|
-		config.vm.define guest_vm do |vm|
+		config.vm.define guest_vm["name"] do |vm|
 			#hostname
 			vm.vm.hostname = guest_vm["name"]
 			# virtualbox config

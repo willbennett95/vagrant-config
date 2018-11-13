@@ -6,7 +6,7 @@
   private_ip: 10.0.10.10
   package_manager: yum
   scripts: 
-  - ssh_gen.bash
+  - init_ssh.bash
 - name: remote
   box: centos/7
   cpus: 1
